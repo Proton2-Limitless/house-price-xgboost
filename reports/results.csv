@@ -1,0 +1,15 @@
+model,cv_rmse_mean,cv_rmse_std,train_rmse_mean,seconds
+Dummy (mean),0.3906,0.0115,0.3907,0.2215
+"Ridge (raw, no outliers)",0.1132,0.0038,0.091,0.2339
+Ridge + types,0.1119,0.0045,0.0891,0.2506
+Ridge + combine,0.1119,0.0045,0.0891,0.2386
+Ridge + age,0.1118,0.0046,0.0891,0.2049
+Ridge + ordinal,0.1126,0.0047,0.0913,0.2209
+Ridge + interact,0.1128,0.0047,0.0914,0.3461
+Ridge + skew log,0.1108,0.0057,0.0903,0.3981
+Ridge tuned (all groups),0.1104,0.0055,0.0931,1.0914
+Ridge tuned (no ordinal/interact),0.1075,0.006,0.0904,1.2
+Random Forest,0.1269,0.0058,0.0607,7.3543
+XGBoost (untuned),0.111,0.0023,0.0435,1.757
+XGBoost tuned (nested CV),0.1107,0.0015,,
+Blend 50/50 (Ridge + XGB),0.1054,0.0041,,

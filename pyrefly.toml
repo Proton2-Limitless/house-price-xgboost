@@ -1,0 +1,9 @@
+python-interpreter-path = ".venv/bin/python"
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]
+
+[errors]
+bad-argument-type = "ignore"
+no-matching-overload = "ignore"
